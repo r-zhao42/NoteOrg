@@ -17,7 +17,7 @@ func main() {
 	} // cli args
 	opts := flag.NewFlagSet("options", flag.ExitOnError)
 
-	defaultDir += "Documents/Obsidian Vault"
+	defaultDir += "/Documents/Obsidian Vault"
 
 	wd := opts.String("dir", defaultDir, "Directory to organize, defaults to obsidian vault directory")
 	organizeAll := opts.Bool("all", false, "Organize all files in directory, defaults to false")
